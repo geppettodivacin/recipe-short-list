@@ -21,10 +21,10 @@ type Section
 
 
 initSections =
-    [ Section { title = "🥞 Breakfast", recipes = initBreakfasts }
-    , Section { title = "🫒 Snacks", recipes = initSnacks }
+    [ Section { title = "🥞 Breakfasts", recipes = initBreakfasts }
+    , Section { title = "🥪 Lunches", recipes = initLunches }
     , Section { title = "🍝 Dinners", recipes = initDinners }
-    , Section { title = "🥗 Sides", recipes = initSnacks }
+    , Section { title = "🥗 Sides", recipes = initSides }
     , Section { title = "🍰 Desserts", recipes = initDesserts }
     ]
 
@@ -32,6 +32,7 @@ initSections =
 initBreakfasts =
     [ Recipe { title = "Breakfast Risotto", url = "" }
     , Recipe { title = "Gluten Free Breakfast Casserole", url = "https://www.glutenfreepalate.com/gluten-free-breakfast-casserole/" }
+    , Recipe { title = "Keto Cream Cheese Sausage Balls", url = "https://stylishcravings.com/keto-cream-cheese-sausage-balls-recipe/" }
     , Recipe { title = "Oatmeal Pancakes", url = "http://milehighmitts.com/oatmeal-pancakes-gluten-free-dairy-free-option/" }
     , Recipe { title = "Peanut Butter Baked Oatmeal", url = "http://milehighmitts.com/peanut-butter-baked-oatmeal-gluten-free-dairy-free-vegan-option/" }
     , Recipe { title = "Peanut Butter Oatmeal Bars", url = "https://reneenicoleskitchen.com/no-bake-peanut-butter-honey-oat-bars/" }
@@ -39,9 +40,8 @@ initBreakfasts =
     ]
 
 
-initSnacks =
+initLunches =
     [ Recipe { title = "Healthy Chicken Salad", url = "https://www.slenderkitchen.com/recipe/healthy-chicken-salad?utm_medium=social&utm_source=pinterest&utm_campaign=tailwind_tribes&utm_content=tribes&utm_term=682877064_27125012_21217" }
-    , Recipe { title = "Keto Cream Cheese Sausage Balls", url = "https://stylishcravings.com/keto-cream-cheese-sausage-balls-recipe/" }
     ]
 
 

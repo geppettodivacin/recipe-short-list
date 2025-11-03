@@ -4786,6 +4786,8 @@ var $author$project$Main$initBreakfasts = _List_fromArray(
 		$author$project$Main$Recipe(
 		{title: 'Gluten Free Breakfast Casserole', url: 'https://www.glutenfreepalate.com/gluten-free-breakfast-casserole/'}),
 		$author$project$Main$Recipe(
+		{title: 'Keto Cream Cheese Sausage Balls', url: 'https://stylishcravings.com/keto-cream-cheese-sausage-balls-recipe/'}),
+		$author$project$Main$Recipe(
 		{title: 'Oatmeal Pancakes', url: 'http://milehighmitts.com/oatmeal-pancakes-gluten-free-dairy-free-option/'}),
 		$author$project$Main$Recipe(
 		{title: 'Peanut Butter Baked Oatmeal', url: 'http://milehighmitts.com/peanut-butter-baked-oatmeal-gluten-free-dairy-free-vegan-option/'}),
@@ -4886,23 +4888,30 @@ var $author$project$Main$initDinners = _List_fromArray(
 		$author$project$Main$Recipe(
 		{title: 'Tomato Basil Cucumber Salad With Feta Cheese and Brown Rice', url: 'https://www.food.com/recipe/tomato-basil-cucumber-salad-with-feta-cheese-and-brown-rice-480977'})
 	]);
-var $author$project$Main$initSnacks = _List_fromArray(
+var $author$project$Main$initLunches = _List_fromArray(
 	[
 		$author$project$Main$Recipe(
-		{title: 'Healthy Chicken Salad', url: 'https://www.slenderkitchen.com/recipe/healthy-chicken-salad?utm_medium=social&utm_source=pinterest&utm_campaign=tailwind_tribes&utm_content=tribes&utm_term=682877064_27125012_21217'}),
+		{title: 'Healthy Chicken Salad', url: 'https://www.slenderkitchen.com/recipe/healthy-chicken-salad?utm_medium=social&utm_source=pinterest&utm_campaign=tailwind_tribes&utm_content=tribes&utm_term=682877064_27125012_21217'})
+	]);
+var $author$project$Main$initSides = _List_fromArray(
+	[
 		$author$project$Main$Recipe(
-		{title: 'Keto Cream Cheese Sausage Balls', url: 'https://stylishcravings.com/keto-cream-cheese-sausage-balls-recipe/'})
+		{title: 'Loaded Deviled Eggs', url: 'https://dashingdish.com/recipe/instant-pot-deviled-eggs'}),
+		$author$project$Main$Recipe(
+		{title: 'Naan', url: 'https://www.washingtonpost.com/news/voraciously/wp/2020/05/27/warm-soft-homemade-naan-is-the-no-fuss-bread-for-the-no-fuss-baker/'}),
+		$author$project$Main$Recipe(
+		{title: 'Oven Roasted Parmesan Potatoes', url: 'https://thecarefreekitchen.com/parmesan-roasted-red-potatoes/'})
 	]);
 var $author$project$Main$initSections = _List_fromArray(
 	[
 		$author$project$Main$Section(
-		{recipes: $author$project$Main$initBreakfasts, title: '🥞 Breakfast'}),
+		{recipes: $author$project$Main$initBreakfasts, title: '🥞 Breakfasts'}),
 		$author$project$Main$Section(
-		{recipes: $author$project$Main$initSnacks, title: '🫒 Snacks'}),
+		{recipes: $author$project$Main$initLunches, title: '🥪 Lunches'}),
 		$author$project$Main$Section(
 		{recipes: $author$project$Main$initDinners, title: '🍝 Dinners'}),
 		$author$project$Main$Section(
-		{recipes: $author$project$Main$initSnacks, title: '🥗 Sides'}),
+		{recipes: $author$project$Main$initSides, title: '🥗 Sides'}),
 		$author$project$Main$Section(
 		{recipes: $author$project$Main$initDesserts, title: '🍰 Desserts'})
 	]);
