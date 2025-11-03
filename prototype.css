@@ -1,0 +1,103 @@
+/* General Body and Font Styles for clean printing */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Styling for the recipe list */
+.recipe-list {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+}
+
+/*
+ * RECIPE ROW LAYOUT: Use Flexbox for aligned recipe name and QR code.
+ * This achieves the "name on the left, QR on the right, one per row" requirement.
+ */
+.recipe-item {
+    display: flex;
+    justify-content: space-between; /* Pushes content to the ends */
+    align-items: center; /* Vertically centers name and QR */
+    padding: 8px 0;
+    border-bottom: 1px dashed #ccc; /* Subtle separator */
+    line-height: 1.4;
+}
+
+.recipe-item:last-child {
+    border-bottom: none;
+}
+
+/* Styling for the anchor tag inside the recipe title */
+.recipe-title a {
+    /* 1. Remove the default blue color */
+    color: inherit; /* Inherits the dark color from .recipe-title */
+    
+    /* 2. Remove the default underline */
+    text-decoration: none;
+    
+    /* 3. Ensure the font weight remains bold (inherited, but good practice) */
+    font-weight: inherit; 
+}
+
+/* Optional: Add a subtle visual cue for interaction on screen */
+.recipe-title a:hover {
+    color: #0056b3; /* A slight blue on hover for screen users */
+    /* Remove this block if you want absolutely no change on hover */
+}
+.recipe-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    /* Allow the title to take up most of the space */
+    flex-grow: 1;
+    padding-right: 15px; /* Space between title and QR */
+}
+
+.qr-code {
+    /* Keep the QR code image small and fixed size for clean printing */
+    width: 70px;
+    height: 70px;
+    border: 1px solid #eee; /* Light border for definition */
+    flex-shrink: 0; /* Prevents the QR image from shrinking */
+}
+
+/* Media Query for Print: Adjusts styles specifically when printing */
+@media print {
+    body {
+        /* Set a max width for cleaner letter-sized print margins */
+        max-width: 8.5in;
+        margin: 0 auto;
+    }
+    
+    /* Print styles often need to remove background colors and shadows */
+    .qr-code {
+        border: 1px solid #000; /* Darken the border for better print visibility */
+    }
+
+    /* Ensure text is dark and clear when printing */
+    h2, .recipe-title {
+        color: #000 !important;
+    }
+
+    /* When printing, always page break */
+    section {
+        page-break-before: always;
+    }
+
+    /* Visually remove the page break on the very first section */
+    section:first-of-type {
+        page-break-before: auto;
+    }
+
+    .recipe-title a {
+        color: #000000 !important;
+        text-decoration: none !important;
+    }
+}

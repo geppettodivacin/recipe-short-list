@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Styled Elm App</title>
+    <link rel="stylesheet" href="prototype.css">
+</head>
+<body>
+    <div id="elm-app"></div> 
+
+    <script type="text/javascript" src="main.js"></script>
+
+    <script type="text/javascript">
+        // 4. Initialize the Elm application
+        var node = document.getElementById('elm-app');
+        var app = Elm.Main.init({ node: node });
+    </script>
+</body>
+</html>
